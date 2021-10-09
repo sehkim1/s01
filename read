@@ -45,3 +45,17 @@ https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=orayoon&logN
 
 ls -l 디렉토리의 자세한 내용 출력
 
+ex07
+
+grep -v '#' 주석제거
+cut -d ":" -f1 
+awk "NR%2==0" 짝수줄에 해당하는 행 출력
+rev 반전
+sort -r 알파벳 역순
+awk -v FT_LINE1="$FT_LINE1" -v FT_LINE2="$FT_LINE2" 'NR>FT_LINE1 && NR<=FT_LINE2'
+tr '\n' ',' 개행 제거, 쉼표로 구분
+sed 's/$/./g' . 붙이기
+tr -d '\n' 개행 제거
+
+
+
