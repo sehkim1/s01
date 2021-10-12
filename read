@@ -24,7 +24,9 @@ ex04
 
 맥 주소(ehernet address, physical address) - 컴퓨터간 데이터를 전송하기 위해 있는 컴퓨터의 물리적 주소
 ifconfig 컴퓨터의 mac주소 표시
+ether 네트워크 인터페이스의 하드웨어 주소
 grep - 파일 내용에서 특정 문자열 찾기
+cut -d 구분자 - 필드를 구분하는 문자를 지정.
 -f2 두번째 필드
 
 ex05
@@ -46,16 +48,23 @@ https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=orayoon&logN
 ls -l 디렉토리의 자세한 내용 출력
 
 ex07
-
+-v 해당 패턴이 존재하지 않는 라인 선택
 grep -v '#' 주석제거
 cut -d ":" -f1 
 awk "NR%2==0" 짝수줄에 해당하는 행 출력
 rev 반전
 sort -r 알파벳 역순
 awk -v FT_LINE1="$FT_LINE1" -v FT_LINE2="$FT_LINE2" 'NR>FT_LINE1 && NR<=FT_LINE2'
+awk -v awk에서 사용될 특정 variable값 
+
 tr '\n' ',' 개행 제거, 쉼표로 구분
 sed 's/$/./g' . 붙이기
 tr -d '\n' 개행 제거
+sed 텍스트 파일 편
+sed -s 치환
+sed g 전역적인 치환
 
+ex08
 
-
+bc 복잡한 연산을 할때 사용하는 명령어 ibase  obase 
+xargs 두개이상의 명령어 조합할때, 출력값을 다음 명령어의 인자로 넘김.
